@@ -4,12 +4,17 @@ public class Pallindrome {
 
     public static void main(String[] args) 
     {
+      while(true){
         int n, c,r,s=0;
         System.out.println("Enter any Number");
         Scanner sc =new Scanner(System.in);
+        System.out.println("0 for Exit..!!");
         n=sc.nextInt();
         c=n;
-        
+        if(n==0){
+          System.out.println("Thank you..!!");
+          break;
+        }
       while(n>0)
       {
         r=n%10;
@@ -25,6 +30,7 @@ public class Pallindrome {
       else{
         System.out.println("not Pallindrome");
       }
+        }
     }
 
 }
